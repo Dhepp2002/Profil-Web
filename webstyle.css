@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.container-nav {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+nav {
+  min-width: 1270px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 7%;
+  opacity: 65%;
+}
+
+.logo img {
+  margin: 0%;
+  width: 50px;
+}
+
+.menu {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu a:hover {
+  color: #8f8f9f;
+}
+
+.menu a {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 17px;
+  color: rgba(32, 39, 32, 1);
+}
+
+.page1 {
+  width: 100%;
+  background-image: url(foto 1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.page1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.4)
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.page1 {
+  padding: 200px 100px 200px 100px;
+  z-index: 2;
+}
+
+.page1 h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  color: rgba(33, 39, 33, 1) rgba(32, 39, 32, 1);
+  opacity: 100%;
+  align-items: center;
+  padding-top: 150px;
+  margin-bottom: 0px;
+}
+
+.page1 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: SemiBold;
+  color: white;
+  opacity: 100%;
+  margin-top: 5px;
+}
+
+.page2 {
+  background-color: rgba(87, 102, 87, 1);
+}
+
+.container-2 {
+  padding: 150px 200px 150px 100px;
+  display: grid;
+  grid-template-areas: "box1 box2";
+  grid-template-columns: 0.3fr 0.9fr;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box1 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+.box2 {
+  grid-area: box2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.box2 h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+  opacity: 80%;
+}
+
+.box2 h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 46px;
+  color: #ffffff;
+  opacity: 80%;
+  margin-top: 1px;
+}
+
+.box2 p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  opacity: 80%;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.box-table {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid rgba(2, 54, 25, 0.678);
+  margin-top: 20px;
+}
+
+.box-table td {
+  padding: 10px;
+  font-weight: 100;
+}
+
+.box-table td b {
+  font-weight: 400;
+}
+
+.page3 {
+  background-color: rgba(99, 120, 99, 1);
+}
+
+.container-3 {
+  padding: 150px 200px 150px 200px;
+}
+
+.page3 h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  opacity: 100%;
+  text-align: start;
+}
+
+.page3 h1 span {
+  color: black;
+}
+
+.box-sm {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.box-sosmed {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.box-sosmed a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: black;
+  border: 2px solid rgba(33, 39, 33, 1);
+  text-align: center;
+  text-decoration: none;
+}
+
+.box-sosmed a p {
+  font-size: 20px;
+}
+
+.email:hover {
+  color: #f8f8fa;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #4285f4,
+    #bb001b,
+    #ea4335,
+    #fbbc05,
+    #34a853
+  );
+}
+
+.instagram:hover {
+  color: #f8f8fa;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+
+.github:hover {
+  color: #f8f8fa;
+  border: none;
+  background-image: linear-gradient(to right, #2d333a, #000000);
+}
+
+.linkedin:hover {
+  color: #f8f8fa;
+  border: none;
+  background-image: linear-gradient(to right, #0077b5, #000000, white);
+}
+
+footer {
+  background-color: #1e2131;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
